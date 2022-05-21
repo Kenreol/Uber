@@ -15,3 +15,11 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     })
 })
+
+window.addEventListener('mouseup', function(e) {
+  let el = document.getElementById('test-js');
+
+  if (el.classList.contains('menu_active')) {
+    el.style.display = 'none'
+  }
+});
